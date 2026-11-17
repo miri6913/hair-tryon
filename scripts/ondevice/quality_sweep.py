@@ -31,12 +31,12 @@ from vto_spike.segment import HAIR_MODEL, HairSegmenter, SelfieParser
 IN, OUT = Path("/inputs"), Path("/out")
 # photo -> styles (women get two f_ styles, men two m_ styles)
 JOBS = {
-    "Hongyoonhee_front": ["f_long_volume", "f_short_bob"],
-    "kaggle_train_18-20_6": ["f_long_volume", "f_short_bob"],
-    "Labina_front": ["f_long_volume", "f_short_bob"],
-    "Nisha_front": ["f_long_volume", "f_short_bob"],
-    "photo_a": ["m_short_buzz", "m_medium_quiff"],
-    "photo_d": ["m_short_buzz", "m_medium_quiff"],
+    "Hongyoonhee_front": ["f_long_volume", "f_short_french_bob"],
+    "kaggle_train_18-20_6": ["f_long_volume", "f_short_french_bob"],
+    "Labina_front": ["f_long_volume", "f_short_french_bob"],
+    "Nisha_front": ["f_long_volume", "f_short_french_bob"],
+    "photo_a": ["m_short_buzz", "m_medium_modern_quiff"],
+    "photo_d": ["m_short_buzz", "m_medium_modern_quiff"],
 }
 SIZES = [1024, 768, 512, 384]
 WEIGHTS = ["bf16", "int8", "int4"]

@@ -25,7 +25,7 @@ import json
 
 IN, OUT = Path("/inputs"), Path("/out")
 PHOTOS = ["kaggle_train_18-20_6", "kaggle_test_31-40_27", "photo_a", "photo_d"]
-STYLES = ["m_short_buzz", "f_long_volume", "f_short_bob", "m_medium_quiff"]
+STYLES = ["m_short_buzz", "f_long_volume", "f_short_french_bob", "m_medium_modern_quiff"]
 SIZES = [1024, 256]
 TILE = (240, 320)
 

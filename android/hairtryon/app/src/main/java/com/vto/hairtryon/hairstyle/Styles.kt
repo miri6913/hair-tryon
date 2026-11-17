@@ -9,18 +9,17 @@ class StyleGroup(val label: String, val styles: List<HairStyle>)
 
 object Styles {
     val female = listOf(
-        StyleGroup("SHORT", listOf(HairStyle("f_short_pixie", "Pixie cut"), HairStyle("f_short_bob", "Short bob"), HairStyle("f_short_italian_bob", "Italian bob"))),
-        StyleGroup("MEDIUM", listOf(HairStyle("f_medium_layered", "Layered shoulder"), HairStyle("f_medium_bob_bangs", "Bob with bangs"))),
-        StyleGroup("LONG", listOf(HairStyle("f_long_straight", "Long straight"), HairStyle("f_long_side_ponytail", "Low side ponytail"), HairStyle("f_long_butterfly", "Butterfly cut"), HairStyle("f_long_volume", "Long volume"))),
+        StyleGroup("SHORT", listOf(HairStyle("f_short_french_bob", "French bob"), HairStyle("f_short_bixie", "Bixie cut"), HairStyle("f_short_italian_bob", "Italian bob"))),
+        StyleGroup("MEDIUM", listOf(HairStyle("f_medium_lob", "Collarbone lob"), HairStyle("f_medium_layered", "Layered shoulder"), HairStyle("f_medium_shag", "Shag cut"), HairStyle("f_medium_c_curl", "C-curl layers"))),
+        StyleGroup("LONG", listOf(HairStyle("f_long_butterfly", "Butterfly cut"), HairStyle("f_long_curtain_layers", "Curtain layers"), HairStyle("f_long_volume", "Voluminous waves"))),
     )
     val male = listOf(
-        StyleGroup("SHORT", listOf(HairStyle("m_short_buzz", "Buzz cut"), HairStyle("m_short_textured_crop", "Textured crop"), HairStyle("m_short_comma", "Comma hair"))),
-        StyleGroup("MEDIUM", listOf(HairStyle("m_medium_quiff", "Swept-back quiff"), HairStyle("m_medium_side_part", "Side part"))),
-        StyleGroup("LONG", listOf(HairStyle("m_long_shoulder", "Shoulder-length"), HairStyle("m_long_man_bun", "Man bun"))),
+        StyleGroup("SHORT", listOf(HairStyle("m_short_buzz", "Buzz cut"), HairStyle("m_short_low_fade", "Low fade"), HairStyle("m_short_french_crop", "French crop"), HairStyle("m_short_ivy_league", "Ivy League"))),
+        StyleGroup("MEDIUM", listOf(HairStyle("m_medium_two_block", "Two-block"), HairStyle("m_medium_modern_quiff", "Modern quiff"), HairStyle("m_medium_shadow_perm", "Shadow perm"), HairStyle("m_medium_leaf_cut", "Leaf cut"), HairStyle("m_medium_curtains", "Curtains"), HairStyle("m_medium_mullet", "Mullet"))),
     )
 
     const val DEFAULT_FEMALE = "f_medium_layered"
-    const val DEFAULT_MALE = "m_medium_quiff"
+    const val DEFAULT_MALE = "m_medium_modern_quiff"
 
     fun groups(female: Boolean) = if (female) Styles.female else male
 

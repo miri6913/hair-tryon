@@ -38,10 +38,11 @@ All `/v1` routes need the `X-API-Key` header. Errors (body `{"detail": {"code", 
 
 `head_cut_off` (hair touches the top edge) is only a warning: the model handled such photos in testing. The app's capture guide should still ask for headroom.
 
-## Styles (16; `data/hairapi_refs/styles.json`, copied into `server/hairapi/catalog.json`)
-Female: short pixie / short bob / Italian bob; medium layered / bob with bangs; long straight / low side ponytail / butterfly cut / long volume. Male: short buzz / textured crop / comma hair; medium quiff /
-side part; long shoulder-length / man bun. The `reference` field of `catalog.json` is only used in `REF_MODE=ref`. To add a style: add it to `styles.json`
-(id, gender, length, name, `hair_prompt`), regenerate `catalog.json` entries, rebuild.
+## Styles (20, version 8; `catalog.json` is the source of truth)
+Female: short French bob / Bixie cut / Italian bob; medium Collarbone lob / Layered shoulder / Shag cut / C-curl layers; long Butterfly cut / Curtain layers / Voluminous waves.
+Male: short Buzz cut / Low fade / French crop / Ivy League; medium Two-block / Modern quiff / Shadow perm / Leaf cut / Curtains / Mullet. Pictures of all 20 are in the
+top-level README. The catalog is prompt-only: the `reference` field is used only in `REF_MODE=ref` and the v8 entries have none. To add a style: add an entry to `catalog.json`
+(id, gender, length, name, `hair_prompt`), add it to the app's style list (`hairstyle/Styles.kt`), rebuild.
 
 ## Time and resources (measured, one RTX 3090, 2026-11-02)
 - **~4.3 s per image** end to end (hair measurement 0.1 s, generate ~4.2 s, no post step). Input photo fit to 1024 px long side, 4 steps. (`REF_MODE=ref`: ~6.5 s; `COMPOSITE=1`: ~7.6 s.)
@@ -55,13 +56,13 @@ side part; long shoulder-length / man bun. The `reference` field of `catalog.jso
 scripts\hs push                # server/, src/vto_spike, models/ -> code/ ; data/hairapi_refs -> refs/ ; data/hairstyle_set -> inputs/
 scripts\hs api-build
 scripts\hs api-start -g 0      # refuses a busy GPU; --restart unless-stopped; 127.0.0.1:8090 on the server only
-scripts\hs api-logs            # "model loaded, 16 styles" + (healthy)
+scripts\hs api-logs            # "model loaded, 20 styles" + (healthy)
 scripts\hs api-stop
 ```
 - The FLUX weights are not in the image: `hf-cache` is mounted read-only with `HF_HUB_OFFLINE=1`. `refs/` is mounted read-only at `/inputs` (needed only in `REF_MODE=ref`; the personal test photos are not visible to the container).
 - A second API for experiments (port 8091, no restart policy, holds a GPU while it runs): `hs api-test-start -g 1 --refs-dir refs [--test-env REF_MODE=ref] [--test-env COMPOSITE=1]`, `hs api-test-stop`. `scripts/ref_compare.py` compares its outputs with the stored baseline and prints a face-drift score.
 - The API key is created once in `<server root>/hairapi.env` (mode 600) and never printed by `hs`; read it with `ssh <host> cat <server root>/hairapi.env`.
-- Test from this PC through a tunnel: `ssh -N -L 8090:127.0.0.1:8090 <host>`, then `set HAIRAPI_KEY=...` and `python scripts/hairapi_client.py edit --photo <jpg> --style f_long_straight`.
+- Test from this PC through a tunnel: `ssh -N -L 8090:127.0.0.1:8090 <host>`, then `set HAIRAPI_KEY=...` and `python scripts/hairapi_client.py edit --photo <jpg> --style f_long_volume`.
 - The container holds a GPU for as long as it runs: the server is shared, so stop it when not testing.
 
 ## Known issues

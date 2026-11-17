@@ -58,7 +58,7 @@ fun CatalogSheet(onPick: (Catalog) -> Unit, onDismiss: () -> Unit) {
             }
             Row(Modifier.fillMaxWidth(), horizontalArrangement = Arrangement.spacedBy(12.dp)) {
                 CatalogCard("Women's styles", "f_short_italian_bob", Modifier.weight(1f)) { onPick(Catalog.Women) }
-                CatalogCard("Men's styles", "m_medium_quiff", Modifier.weight(1f)) { onPick(Catalog.Men) }
+                CatalogCard("Men's styles", "m_medium_modern_quiff",Modifier.weight(1f)) { onPick(Catalog.Men) }
             }
             Text(
                 "Show all styles",

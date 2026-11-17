@@ -13,7 +13,7 @@ Two features, one Android app:
 | Feature | Where it runs | What it does |
 | --- | --- | --- |
 | **Live colour** | On the phone, real time | Front camera in, recoloured hair out at ~30 FPS. Hair segmentation on the GPU (LiteRT), recolouring in a GLSL shader. No network needed, no photo leaves the phone. |
-| **AI hairstyle** | Your own GPU server | Take a photo, pick one of 16 styles, get the photo back with the new cut in about 4 seconds of server time. FLUX.2 [klein] 4B edits the photo from a text prompt and keeps the person's own hair colour. |
+| **AI hairstyle** | Your own GPU server | Take a photo, pick one of 20 styles, get the photo back with the new cut in about 4 seconds of server time. FLUX.2 [klein] 4B edits the photo from a text prompt and keeps the person's own hair colour. |
 
 ## How it works
 
@@ -39,6 +39,52 @@ flowchart LR
 
 The live-colour path never talks to the server. The hairstyle path sends one photo and one style id, and gets one JPEG back.
 Full flow diagrams, timings and error handling are in **[docs/ARCHITECTURE.md](docs/ARCHITECTURE.md)**.
+
+## Hairstyles
+
+The API offers 20 styles (10 women, 10 men), defined as one text prompt each in [`server/hairapi/catalog.json`](server/hairapi/catalog.json).
+Ordered short to long:
+
+**Women**
+
+<table>
+  <tr>
+    <td align="center"><img src="docs/images/hairstyles/f_short_french_bob.jpg" width="150" alt="French bob"><br><sub>French bob</sub></td>
+    <td align="center"><img src="docs/images/hairstyles/f_short_bixie.jpg" width="150" alt="Bixie cut"><br><sub>Bixie cut</sub></td>
+    <td align="center"><img src="docs/images/hairstyles/f_short_italian_bob.jpg" width="150" alt="Italian bob"><br><sub>Italian bob</sub></td>
+    <td align="center"><img src="docs/images/hairstyles/f_medium_lob.jpg" width="150" alt="Collarbone lob"><br><sub>Collarbone lob</sub></td>
+    <td align="center"><img src="docs/images/hairstyles/f_medium_layered.jpg" width="150" alt="Layered shoulder"><br><sub>Layered shoulder</sub></td>
+  </tr>
+  <tr>
+    <td align="center"><img src="docs/images/hairstyles/f_medium_shag.jpg" width="150" alt="Shag cut"><br><sub>Shag cut</sub></td>
+    <td align="center"><img src="docs/images/hairstyles/f_medium_c_curl.jpg" width="150" alt="C-curl layers"><br><sub>C-curl layers</sub></td>
+    <td align="center"><img src="docs/images/hairstyles/f_long_butterfly.jpg" width="150" alt="Butterfly cut"><br><sub>Butterfly cut</sub></td>
+    <td align="center"><img src="docs/images/hairstyles/f_long_curtain_layers.jpg" width="150" alt="Curtain layers"><br><sub>Curtain layers</sub></td>
+    <td align="center"><img src="docs/images/hairstyles/f_long_volume.jpg" width="150" alt="Voluminous waves"><br><sub>Voluminous waves</sub></td>
+  </tr>
+</table>
+
+**Men**
+
+<table>
+  <tr>
+    <td align="center"><img src="docs/images/hairstyles/m_short_buzz.jpg" width="150" alt="Buzz cut"><br><sub>Buzz cut</sub></td>
+    <td align="center"><img src="docs/images/hairstyles/m_short_low_fade.jpg" width="150" alt="Low fade"><br><sub>Low fade</sub></td>
+    <td align="center"><img src="docs/images/hairstyles/m_short_french_crop.jpg" width="150" alt="French crop"><br><sub>French crop</sub></td>
+    <td align="center"><img src="docs/images/hairstyles/m_short_ivy_league.jpg" width="150" alt="Ivy League"><br><sub>Ivy League</sub></td>
+    <td align="center"><img src="docs/images/hairstyles/m_medium_two_block.jpg" width="150" alt="Two-block"><br><sub>Two-block</sub></td>
+  </tr>
+  <tr>
+    <td align="center"><img src="docs/images/hairstyles/m_medium_modern_quiff.jpg" width="150" alt="Modern quiff"><br><sub>Modern quiff</sub></td>
+    <td align="center"><img src="docs/images/hairstyles/m_medium_shadow_perm.jpg" width="150" alt="Shadow perm"><br><sub>Shadow perm</sub></td>
+    <td align="center"><img src="docs/images/hairstyles/m_medium_leaf_cut.jpg" width="150" alt="Leaf cut"><br><sub>Leaf cut</sub></td>
+    <td align="center"><img src="docs/images/hairstyles/m_medium_curtains.jpg" width="150" alt="Curtains"><br><sub>Curtains</sub></td>
+    <td align="center"><img src="docs/images/hairstyles/m_medium_mullet.jpg" width="150" alt="Mullet"><br><sub>Mullet</sub></td>
+  </tr>
+</table>
+
+<sub>The portraits are AI-generated reference images of each style. They show no real person and are not output of this repo's pipeline.
+To add a style, see the note at the top of `catalog.json`.</sub>
 
 ## Repository layout
 

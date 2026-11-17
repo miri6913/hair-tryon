@@ -4,7 +4,7 @@ The API listens on 127.0.0.1:8090 on <host>; open a tunnel first:   ssh -N -L 80
 The key is read from the environment (HAIRAPI_KEY) or --key; it is never printed.
 
   python scripts/hairapi_client.py catalog [--gender female]
-  python scripts/hairapi_client.py edit --photo data/hairstyle_set/photo_a.jpg --style f_bob_bangs [--out results/api]
+  python scripts/hairapi_client.py edit --photo data/hairstyle_set/photo_a.jpg --style f_short_french_bob [--out results/api]
 """
 import argparse
 import os

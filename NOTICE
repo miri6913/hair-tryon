@@ -24,6 +24,7 @@ Fonts
 
 Images
   - android/hairtryon/app/src/main/res/drawable-nodpi/home_*.webp and the portrait in docs/media/ are AI-generated; they show no real person.
+  - docs/images/hairstyles/*.jpg are AI-generated portraits (made with Google's Gemini image editing); they show no real person.
   - Wikimedia Commons photos used in the feasibility study are not included. Their authors and licences are listed in data/manifest_wiki.csv.
 
 Datasets
