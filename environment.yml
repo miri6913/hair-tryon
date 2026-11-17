@@ -1,0 +1,15 @@
+name: vto
+channels:
+  - conda-forge
+dependencies:
+  - python=3.11
+  - numpy
+  - scikit-image
+  - pillow
+  - requests
+  - pytest
+  - pip
+  - pip:
+      - mediapipe
+      - opencv-contrib-python
+      - matplotlib  # PyPI wheel; conda-forge build is blocked by Smart App Control

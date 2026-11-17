@@ -1,0 +1,10 @@
+Captured 2026-10-08 14:31 from logcat (raw log was later cleared; transcribed from the capture).
+Device: Samsung Galaxy Tab A8 SM-X200, Unisoc T618, Mali-G52, Android 14
+App: MediaPipe image_segmentation sample (tasks-vision 1.0.0), hair_segmenter.tflite, Delegate = GPU
+
+F libc  : Fatal signal 6 (SIGABRT) in tid (Thread-22), pid (.imagesegmenter)
+F DEBUG : Abort message: 'F0000 ... image_frame.cc:298] Invalid format: UNKNOWN'
+Stack: libmediapipe_tasks_jni.so -> TaskRunner/OutputHandler (result callback path)
+Reproduced twice (select Hair Segmenter, then Delegate = GPU).
+
+Multiclass + GPU: sample shows a failure toast and falls back to CPU (Delegate stays CPU), no crash.

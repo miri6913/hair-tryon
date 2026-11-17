@@ -1,0 +1,30 @@
+Hair Try-On
+Copyright 2026 Hair Try-On contributors
+
+This product's own code is licensed under the Apache License, Version 2.0 (see LICENSE).
+
+Third-party material and how it is used
+---------------------------------------
+Models (downloaded by the user, not included in this repository)
+  - MediaPipe hair segmenter and selfie multiclass segmenter: Apache-2.0, Google.
+  - FLUX.2 [klein] 4B: Apache-2.0, Black Forest Labs. Its text encoder is Qwen3; check the licence in the model repository.
+  - Comparison runners under server/ (not used by the hairstyle API) load other models under their own terms:
+      FLUX.2 [klein] 9B (FLUX Non-Commercial), HairFast (code MIT, weights partly non-commercial),
+      HairCLIPv2 (no licence file), Stable-Hair (code Apache-2.0, Stable Diffusion 1.5 CreativeML OpenRAIL-M),
+      Qwen-Image-Edit (Apache-2.0).
+    Using these for anything beyond research is your responsibility.
+
+Libraries
+  - LiteRT, CameraX, Jetpack Compose, AndroidX: Apache-2.0.
+  - OkHttp: Apache-2.0.
+  - diffusers, transformers, accelerate, FastAPI, uvicorn, OpenCV, NumPy, Pillow: see each project's licence.
+
+Fonts
+  - Inter (android/hairtryon/app/src/main/res/font/inter_*.ttf): SIL Open Font License 1.1, https://openfontlicense.org
+
+Images
+  - android/hairtryon/app/src/main/res/drawable-nodpi/home_*.webp and the portrait in docs/media/ are AI-generated; they show no real person.
+  - Wikimedia Commons photos used in the feasibility study are not included. Their authors and licences are listed in data/manifest_wiki.csv.
+
+Datasets
+  - A Kaggle face dataset was used locally for the feasibility study. It is not included and must not be redistributed.

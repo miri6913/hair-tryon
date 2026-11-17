@@ -1,0 +1,5 @@
+# status=ok
+--------- beginning of main
+10-08 15:11:59.276 25036 25078 I VTO_BENCH: model=hair config=cpu init+first_run_ms=63
+10-08 15:12:21.802 25036 25078 I VTO_BENCH: model=hair config=cpu sustained_fps_per_5s=31.2 28.0 28.0 28.0
+10-08 15:12:21.805 25036 25078 I VTO_BENCH: model=hair config=cpu RESULT init_ms=63 run_median_ms=21.3 run_p95_ms=23.3 run_mean_ms=21.7 e2e_median_ms=22.5 out_len=524288

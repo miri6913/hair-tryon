@@ -1,0 +1,3 @@
+@echo off
+rem Shortcut for the hairstyle server driver:  scripts\hs status | push | build -m qwen_text | run -m qwen_text -g 1 -l 2 ...
+"%USERPROFILE%\anaconda3\envs\vto\python.exe" -I "%~dp0hairstyle_sync.py" %*

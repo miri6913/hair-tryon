@@ -1,0 +1,134 @@
+{
+  "version": 7,
+  "_note": "References are synthetic portraits (people who do not exist) generated with FLUX.2 klein 4B (Apache-2.0) by server/flux2/gen_refs.py from data/hairapi_refs/styles.json. `reference` is a file in the server's refs/ folder (mounted read-only at /inputs).",
+  "styles": [
+    {
+      "id": "f_short_pixie",
+      "gender": "female",
+      "length": "short",
+      "name": "Pixie cut",
+      "hair_prompt": "a short pixie cut with tapered sides and a short layered top",
+      "reference": "f_short_pixie.jpg"
+    },
+    {
+      "id": "f_short_bob",
+      "gender": "female",
+      "length": "short",
+      "name": "Short bob",
+      "hair_prompt": "a sleek chin-length straight bob without bangs",
+      "reference": "f_short_bob.jpg"
+    },
+    {
+      "id": "f_short_italian_bob",
+      "gender": "female",
+      "length": "short",
+      "name": "Italian bob",
+      "hair_prompt": "a voluminous jaw-length Italian bob with blunt ends that flick softly outward, full body and soft movement, a slightly off-center part, no bangs",
+      "reference": "f_short_italian_bob.jpg"
+    },
+    {
+      "id": "f_medium_layered",
+      "gender": "female",
+      "length": "medium",
+      "name": "Layered shoulder-length",
+      "hair_prompt": "layered shoulder-length hair with soft layers and a center part",
+      "reference": "f_medium_layered.jpg"
+    },
+    {
+      "id": "f_medium_bob_bangs",
+      "gender": "female",
+      "length": "medium",
+      "name": "Bob with bangs",
+      "hair_prompt": "a straight bob just below the chin with full straight bangs",
+      "reference": "f_medium_bob_bangs.jpg"
+    },
+    {
+      "id": "f_long_straight",
+      "gender": "female",
+      "length": "long",
+      "name": "Long straight",
+      "hair_prompt": "long straight hair past the shoulders with a center part",
+      "reference": "f_long_straight.jpg"
+    },
+    {
+      "id": "f_long_side_ponytail",
+      "gender": "female",
+      "length": "long",
+      "name": "Low side ponytail",
+      "hair_prompt": "a long low side ponytail resting over one shoulder",
+      "reference": "f_long_side_ponytail.jpg"
+    },
+    {
+      "id": "f_long_butterfly",
+      "gender": "female",
+      "length": "long",
+      "name": "Butterfly cut",
+      "hair_prompt": "long chest-length hair in a butterfly cut: short face-framing layers from the cheekbones that sweep back and outward, long feathered layers below with airy volume and softly flicked ends, a slightly off-center part",
+      "reference": "f_long_butterfly.jpg"
+    },
+    {
+      "id": "f_long_volume",
+      "gender": "female",
+      "length": "long",
+      "name": "Long volume",
+      "hair_prompt": "very long voluminous layered hair past the chest with big soft bouncy waves, side-swept face-framing layers that fall forward over the cheeks and partly cover the sides of the face, lots of lift at the crown, long feathered layers ending in soft outward flicks, a deep side part",
+      "reference": "f_long_volume.jpg"
+    },
+    {
+      "id": "m_short_buzz",
+      "gender": "male",
+      "length": "short",
+      "name": "Buzz cut",
+      "hair_prompt": "a very short buzz cut",
+      "reference": "m_short_buzz.jpg"
+    },
+    {
+      "id": "m_short_textured_crop",
+      "gender": "male",
+      "length": "short",
+      "name": "Textured crop",
+      "hair_prompt": "a short textured crop with a full fringe across the forehead",
+      "reference": "m_short_textured_crop.jpg"
+    },
+    {
+      "id": "m_short_comma",
+      "gender": "male",
+      "length": "short",
+      "name": "Comma hair",
+      "hair_prompt": "a short Korean-style men's soft curved crop, textured and slightly tousled on top, the fringe falling forward in a gentle C-curve to the side just above the eyebrows, short tapered sides, ears visible",
+      "reference": "m_short_comma.jpg"
+    },
+    {
+      "id": "m_medium_quiff",
+      "gender": "male",
+      "length": "medium",
+      "name": "Swept-back quiff",
+      "hair_prompt": "a voluminous swept-back quiff with shorter sides",
+      "reference": "m_medium_quiff.jpg"
+    },
+    {
+      "id": "m_medium_side_part",
+      "gender": "male",
+      "length": "medium",
+      "name": "Side part",
+      "hair_prompt": "a neat side part, medium length on top with short tapered sides",
+      "reference": "m_medium_side_part.jpg"
+    },
+    {
+      "id": "m_long_shoulder",
+      "gender": "male",
+      "length": "long",
+      "name": "Shoulder-length",
+      "hair_prompt": "straight shoulder-length hair parted in the middle",
+      "reference": "m_long_shoulder.jpg"
+    },
+    {
+      "id": "m_long_man_bun",
+      "gender": "male",
+      "length": "long",
+      "name": "Man bun",
+      "hair_prompt": "long hair pulled back into a high top-knot man bun with tidy sides",
+      "reference": "m_long_man_bun.jpg"
+    }
+  ]
+}

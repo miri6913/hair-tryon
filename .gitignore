@@ -1,0 +1,49 @@
+# --- secrets and signing: never commit ---
+.env
+*.env
+local.properties
+*.jks
+*.keystore
+keystore.properties
+
+# --- IDE / OS ---
+.idea/
+.vscode/
+.pytest_cache/
+.ipynb_checkpoints/
+__pycache__/
+*.pyc
+.DS_Store
+Thumbs.db
+
+# --- downloaded models (python scripts/download_models.py) ---
+models/
+
+# --- datasets and personal photos: local only, never redistribute ---
+data/kaggle/
+data/archive.zip
+data/photos/
+data/photos_kaggle/
+data/photos_wiki/
+data/hairstyle_test/
+data/hairstyle_set/
+data/hairstyle_set.csv
+data/hairapi_refs/
+data/manifest.csv
+data/manifest_kaggle.csv
+
+# --- generated output (regenerate with the scripts) ---
+results/masks/
+results/golden/
+results/hairstyle/
+results/api/
+results/demo/
+results/review/
+results/**/*.png
+results/**/*.jpg
+
+# --- build output ---
+android/**/.gradle/
+android/**/build/
+android/litert-bench/app/src/main/assets/bench_input.jpg
+android-spike/

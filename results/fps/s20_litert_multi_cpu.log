@@ -1,0 +1,5 @@
+# status=ok
+--------- beginning of main
+10-08 15:13:13.568 25624 25643 I VTO_BENCH: model=multi config=cpu init+first_run_ms=326
+10-08 15:14:11.279 25624 25643 I VTO_BENCH: model=multi config=cpu sustained_fps_per_5s=2.8 2.8 2.8 2.8
+10-08 15:14:11.281 25624 25643 I VTO_BENCH: model=multi config=cpu RESULT init_ms=326 run_median_ms=359.4 run_p95_ms=360.8 run_mean_ms=352.1 e2e_median_ms=360.1 out_len=393216

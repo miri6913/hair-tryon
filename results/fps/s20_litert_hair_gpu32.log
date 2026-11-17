@@ -1,0 +1,5 @@
+# status=ok
+--------- beginning of main
+10-08 15:12:49.880 25484 25503 I VTO_BENCH: model=hair config=gpu32 init+first_run_ms=1264
+10-08 15:13:10.968 25484 25503 I VTO_BENCH: model=hair config=gpu32 sustained_fps_per_5s=84.8 83.2 78.3
+10-08 15:13:11.110 25484 25503 I VTO_BENCH: model=hair config=gpu32 RESULT init_ms=1264 run_median_ms=1.6 run_p95_ms=2.3 run_mean_ms=1.7 e2e_median_ms=9.9 out_len=524288 vs_cpu_max_abs=0.0492 vs_cpu_mean_abs=0.00001 class_agree=1.0000 hair_iou=1.0000 hair_px_cpu=5397 hair_px_gpu=5397

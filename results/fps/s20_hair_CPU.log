@@ -1,0 +1,21 @@
+--------- beginning of main
+10-08 15:02:33.039 14355 17553 I VTO_FPS : model=hair delegate=CPU fps=13.7 latency_ms=108.2
+10-08 15:02:35.099 14355 17552 I VTO_FPS : model=hair delegate=CPU fps=11.2 latency_ms=125.8
+10-08 15:02:37.156 14355 17556 I VTO_FPS : model=hair delegate=CPU fps=15.1 latency_ms=96.5
+10-08 15:02:39.189 14355 17553 I VTO_FPS : model=hair delegate=CPU fps=14.8 latency_ms=102.5
+10-08 15:02:41.242 14355 17558 I VTO_FPS : model=hair delegate=CPU fps=14.1 latency_ms=97.9
+10-08 15:02:43.274 14355 17558 I VTO_FPS : model=hair delegate=CPU fps=14.8 latency_ms=101.4
+10-08 15:02:45.333 14355 17559 I VTO_FPS : model=hair delegate=CPU fps=14.6 latency_ms=94.9
+10-08 15:02:47.344 14355 17553 I VTO_FPS : model=hair delegate=CPU fps=14.4 latency_ms=98.7
+10-08 15:02:49.393 14355 17555 I VTO_FPS : model=hair delegate=CPU fps=15.6 latency_ms=90.3
+10-08 15:02:51.522 14355 17552 I VTO_FPS : model=hair delegate=CPU fps=11.3 latency_ms=121.0
+10-08 15:02:53.555 14355 17558 I VTO_FPS : model=hair delegate=CPU fps=7.4 latency_ms=188.6
+10-08 15:02:55.596 14355 17555 I VTO_FPS : model=hair delegate=CPU fps=15.2 latency_ms=94.9
+10-08 15:02:57.618 14355 17559 I VTO_FPS : model=hair delegate=CPU fps=16.3 latency_ms=90.1
+10-08 15:02:59.630 14355 17556 I VTO_FPS : model=hair delegate=CPU fps=16.4 latency_ms=87.4
+10-08 15:03:01.632 14355 17558 I VTO_FPS : model=hair delegate=CPU fps=16.0 latency_ms=90.8
+10-08 15:03:03.676 14355 17552 I VTO_FPS : model=hair delegate=CPU fps=15.7 latency_ms=90.3
+10-08 15:03:05.748 14355 17555 I VTO_FPS : model=hair delegate=CPU fps=15.4 latency_ms=92.6
+10-08 15:03:07.767 14355 17559 I VTO_FPS : model=hair delegate=CPU fps=14.4 latency_ms=96.7
+10-08 15:03:09.820 14355 17558 I VTO_FPS : model=hair delegate=CPU fps=15.6 latency_ms=88.8
+10-08 15:03:11.862 14355 17552 I VTO_FPS : model=hair delegate=CPU fps=15.2 latency_ms=95.0

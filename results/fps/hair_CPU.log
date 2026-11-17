@@ -1,0 +1,23 @@
+--------- beginning of main
+10-08 14:28:50.093 13056 13512 I VTO_FPS : model=hair delegate=CPU fps=5.4 latency_ms=220.5
+10-08 14:28:52.176 13056 13514 I VTO_FPS : model=hair delegate=CPU fps=6.2 latency_ms=184.1
+10-08 14:28:54.273 13056 13515 I VTO_FPS : model=hair delegate=CPU fps=6.7 latency_ms=180.0
+10-08 14:28:56.383 13056 13512 I VTO_FPS : model=hair delegate=CPU fps=6.6 latency_ms=180.4
+10-08 14:28:58.520 13056 13513 I VTO_FPS : model=hair delegate=CPU fps=6.6 latency_ms=178.3
+10-08 14:29:00.612 13056 13511 I VTO_FPS : model=hair delegate=CPU fps=6.7 latency_ms=177.3
+10-08 14:29:02.630 13056 13508 I VTO_FPS : model=hair delegate=CPU fps=6.9 latency_ms=173.5
+10-08 14:29:04.652 13056 13512 I VTO_FPS : model=hair delegate=CPU fps=6.4 latency_ms=180.0
+10-08 14:29:06.717 13056 13513 I VTO_FPS : model=hair delegate=CPU fps=5.8 latency_ms=201.0
+10-08 14:29:08.812 13056 13514 I VTO_FPS : model=hair delegate=CPU fps=6.7 latency_ms=175.6
+10-08 14:29:10.825 13056 13513 I VTO_FPS : model=hair delegate=CPU fps=7.0 latency_ms=169.1
+10-08 14:29:12.902 13056 13509 I VTO_FPS : model=hair delegate=CPU fps=7.7 latency_ms=160.0
+10-08 14:29:14.921 13056 13510 I VTO_FPS : model=hair delegate=CPU fps=7.9 latency_ms=152.1
+10-08 14:29:17.027 13056 13515 I VTO_FPS : model=hair delegate=CPU fps=7.6 latency_ms=161.1
+10-08 14:29:19.050 13056 13514 I VTO_FPS : model=hair delegate=CPU fps=7.9 latency_ms=156.5
+10-08 14:29:21.065 13056 13511 I VTO_FPS : model=hair delegate=CPU fps=7.9 latency_ms=155.8
+10-08 14:29:23.111 13056 13511 I VTO_FPS : model=hair delegate=CPU fps=7.8 latency_ms=153.2
+10-08 14:29:25.209 13056 13510 I VTO_FPS : model=hair delegate=CPU fps=7.6 latency_ms=157.6
+10-08 14:29:27.296 13056 13508 I VTO_FPS : model=hair delegate=CPU fps=7.7 latency_ms=157.7
+10-08 14:29:29.363 13056 13510 I VTO_FPS : model=hair delegate=CPU fps=6.8 latency_ms=179.9
+10-08 14:29:31.434 13056 13511 I VTO_FPS : model=hair delegate=CPU fps=6.8 latency_ms=174.1
+10-08 14:29:33.473 13056 13513 I VTO_FPS : model=hair delegate=CPU fps=6.9 latency_ms=173.9

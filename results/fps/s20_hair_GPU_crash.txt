@@ -1,0 +1,1 @@
+2026-10-08 15:03 Galaxy S20 5G SM-G981N (Snapdragon 865 / Adreno 650, Android 13), tasks-vision 1.1.0, hair_segmenter + GPU delegate: SIGABRT, Abort message: 'image_frame.cc:298 Invalid format: UNKNOWN' (same as Tab A8).
