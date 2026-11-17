@@ -2,9 +2,11 @@
 
 See a new hair colour or hairstyle on your own photo before going to the salon.
 
-<video src="https://github.com/miri6913/hair-tryon/raw/main/docs/media/hair_tryon_ad.mp4" poster="https://github.com/miri6913/hair-tryon/raw/main/docs/media/hair_tryon_ad.jpg" width="320" controls muted></video>
+<p align="center">
+  <a href="docs/media/hair_tryon_ad.mp4"><img src="docs/media/hair_tryon_ad.gif" width="320" alt="Hair Try-On demo: live colour and AI hairstyle"></a>
+</p>
 
-*21-second demo. If the player does not load, [open the video](docs/media/hair_tryon_ad.mp4).*
+<p align="center"><em>Live preview above. <a href="docs/media/hair_tryon_ad.mp4">Watch the full-quality video</a>.</em></p>
 
 Two features, one Android app:
 
